@@ -1,4 +1,5 @@
 import { useState } from "react";
+fetch("https://portfolio-backend-snyh.onrender.com/contact")
 
 export default function Contact() {
   const [formData, setFormData] = useState({
