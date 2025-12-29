@@ -1,44 +1,32 @@
-import { Link, NavLink } from "react-router-dom";
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
-export default function Navbar({ dark, setDark }) {
+export default function Navbar() {
+  const [open, setOpen] = useState(false);
+
+  const toggleMenu = () => setOpen(!open);
+  const closeMenu = () => setOpen(false);
+
   return (
-    <nav className="navbar">
-      <div className="nav-logo">
-        Portfolio<span></span>
-      </div>
+    <header className="navbar">
 
-      <ul className="nav-links">
-        <li>
-          <NavLink to="/" className="nav-item">
-            Home
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/about" className="nav-item">
-            About
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/skills" className="nav-item">
-            Skills
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/experience" className="nav-item">
-            Experience
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/projects" className="nav-item">
-            Projects
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/contact" className="nav-item contact-btn">
-            Contact
-          </NavLink>
-        </li>
+      <h2 className="logo">Portfolio</h2>
+
+      {/* HAMBURGER BUTTON */}
+      <button className="menu-btn" onClick={toggleMenu}>
+        ☰
+      </button>
+
+      {/* MENU LINKS */}
+      <ul className={`nav-links ${open ? "show" : ""}`}>
+        <li><NavLink to="/" onClick={closeMenu}>Home</NavLink></li>
+        <li><NavLink to="/about" onClick={closeMenu}>About</NavLink></li>
+        <li><NavLink to="/skills" onClick={closeMenu}>Skills</NavLink></li>
+        <li><NavLink to="/experience" onClick={closeMenu}>Experience</NavLink></li>
+        <li><NavLink to="/projects" onClick={closeMenu}>Projects</NavLink></li>
+        <li><NavLink to="/contact" onClick={closeMenu}>Contact</NavLink></li>
       </ul>
-    </nav>
+
+    </header>
   );
 }
