@@ -1,4 +1,5 @@
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -9,11 +10,11 @@ export default function Footer() {
 
       {/* Navigation Links */}
       <ul className="footer-links">
-        <li><a href="/about">About</a></li>
-        <li><a href="/skills">Skills</a></li>
-        <li><a href="/experience">Experience</a></li>
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="/education">Education</a></li>
+        <li><Link to="/projects">Projects</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/skills">Skills</Link></li>
+        <li><Link to="/experience">Experience</Link></li>
+        <li><Link to="/education">Education</Link></li>
       </ul>
 
       {/* Social Icons */}
