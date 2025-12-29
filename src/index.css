@@ -1878,3 +1878,107 @@ html, body {
     overflow-x: hidden;
   }
 }
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+/* LINKS */
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+/* common style (mobile + desktop same look) */
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  position: relative;
+}
+
+/* underline animation */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg,#1e90ff,#47c3ff);
+  transition: width .25s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+/* active */
+.nav-links .active {
+  font-weight: 700;
+}
+
+/* remove purple visited */
+.nav-links a:visited {
+  color: #000;
+}
+
+/* HAMBURGER */
+.menu-btn {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* ============= MOBILE NAVBAR ============= */
+
+@media (max-width: 768px) {
+
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    background: #fff;
+    flex-direction: column;
+    gap: 14px;
+    padding: 16px 22px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.12);
+    width: 180px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}
