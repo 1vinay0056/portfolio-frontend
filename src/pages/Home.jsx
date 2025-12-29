@@ -20,7 +20,7 @@ enthusiast</h2>
         </p>
 
         <div className="home-actions">
-          <Link to="/projects" className="btn primary">
+          <Link to="/projects" className="btn secondary">
             View Projects
           </Link>
           <Link to="/contact" className="btn secondary">
@@ -36,14 +36,16 @@ enthusiast</h2>
         </div>
       </div>
 
-      <div className="home-right">
-        <div className="profile-circle">
-          <span>👨‍💻</span>
-        </div>
-        <p className="tagline">
-          MERN • Python • AI/ML • IoT
-        </p>
-      </div>
+<div className="home-right">
+  
+  <img
+    src="/vinay.jpeg"
+    alt="Vinay Kumar"
+    className="hero-photo"
+  />
+</div>
+
+      
     </section>
   );
 }

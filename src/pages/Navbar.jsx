@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <header className="navbar">
 
-      <h2 className="logo">Portfolio</h2>
+      <h2 className="logo">Vinay/Kumar</h2>
 
       {/* HAMBURGER BUTTON */}
       <button className="menu-btn" onClick={toggleMenu}>
@@ -24,7 +24,9 @@ export default function Navbar() {
         <li><NavLink to="/skills" onClick={closeMenu}>Skills</NavLink></li>
         <li><NavLink to="/experience" onClick={closeMenu}>Experience</NavLink></li>
         <li><NavLink to="/projects" onClick={closeMenu}>Projects</NavLink></li>
+        <li><NavLink to="/education" onClick={closeMenu}>Education</NavLink></li>
         <li><NavLink to="/contact" onClick={closeMenu}>Contact</NavLink></li>
+        
       </ul>
 
     </header>
