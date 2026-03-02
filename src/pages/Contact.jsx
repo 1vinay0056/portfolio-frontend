@@ -1,5 +1,4 @@
 import { useState } from "react";
-fetch("https://portfolio-backend-snyh.onrender.com/contact")
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -21,18 +20,19 @@ export default function Contact() {
     setStatus("");
 
     try {
-      const res = await fetch("http://localhost:5000/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+      const res = await fetch(
+        "https://portfolio-backend-snyh.onrender.com/contact",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        }
+      );
 
       const data = await res.json();
 
       if (data.success) {
-        setStatus(
-          "✅ Message sent successfully! A confirmation email has been sent to you."
-        );
+        setStatus("✅ Message sent successfully!");
         setFormData({ name: "", email: "", message: "" });
       } else {
         setStatus("❌ Failed to send message. Please try again.");
@@ -53,6 +53,7 @@ export default function Contact() {
         </p>
 
         <div className="contact-wrapper">
+
           {/* Left Info */}
           <div className="contact-info">
             <div className="info-card">
@@ -123,9 +124,9 @@ export default function Contact() {
               {loading ? "Sending..." : "Send Message"}
             </button>
 
-            {/* ✅ Auto-reply confirmation text */}
             {status && <p className="form-status">{status}</p>}
           </form>
+
         </div>
       </div>
     </section>
