@@ -5,8 +5,8 @@ export default function Skills() {
 
         <h2 className="skills-title">Skills</h2>
         <p className="skills-subtitle">
-          Technologies and tools I have worked with across Full Stack, AI/ML,
-          and IoT-based projects.
+          Technical skills and tools I have worked with across AI/ML,
+          Data Engineering, Analytics, and Full Stack development.
         </p>
 
         <div className="skills-grid">
@@ -14,54 +14,67 @@ export default function Skills() {
           <div className="skill-card">
             <h3>💻 Programming Languages</h3>
             <div className="skill-tags">
-              <span>C</span>
-              <span>Java</span>
-              <span>JavaScript</span>
               <span>Python</span>
+              <span>Java</span>
+              <span>C</span>
+              <span>JavaScript</span>
             </div>
           </div>
 
           <div className="skill-card">
-            <h3>🎨 Frontend</h3>
+            <h3>🤖 AI / Machine Learning</h3>
             <div className="skill-tags">
-              <span>HTML5</span>
-              <span>CSS3</span>
-              <span>Bootstrap</span>
-              <span>React.js</span>
+              <span>Machine Learning</span>
+              <span>Data Preprocessing</span>
+              <span>Model Training</span>
+              <span>Feature Engineering</span>
             </div>
           </div>
 
           <div className="skill-card">
-            <h3>⚙️ Backend</h3>
+            <h3>📊 Data Science & Analytics</h3>
             <div className="skill-tags">
-              <span>Node.js</span>
-              <span>Express.js</span>
+              <span>Data Analysis</span>
+              <span>Statistical Thinking</span>
+              <span>Data Visualization</span>
+              <span>Pandas</span>
+              <span>NumPy</span>
+            </div>
+          </div>
+
+          <div className="skill-card">
+            <h3>⚙️ Backend & APIs</h3>
+            <div className="skill-tags">
               <span>FastAPI</span>
+              <span>Node.js</span>
+              <span>REST APIs</span>
             </div>
           </div>
 
           <div className="skill-card">
             <h3>🗄️ Databases</h3>
             <div className="skill-tags">
-              <span>MongoDB</span>
               <span>SQL</span>
+              <span>MongoDB</span>
+              <span>Database Design</span>
             </div>
           </div>
 
           <div className="skill-card">
-            <h3>🤖 AI / ML</h3>
+            <h3>🎨 Frontend (Additional)</h3>
             <div className="skill-tags">
-              <span>Machine Learning</span>
-              <span>Artificial Intelligence</span>
+              <span>React.js</span>
+              <span>HTML5</span>
+              <span>CSS3</span>
             </div>
           </div>
 
           <div className="skill-card">
-            <h3>📚 Core Subjects</h3>
+            <h3>📚 Computer Science Fundamentals</h3>
             <div className="skill-tags">
               <span>DSA</span>
               <span>DBMS</span>
-              <span>Operating System</span>
+              <span>Operating Systems</span>
               <span>OOP</span>
             </div>
           </div>
@@ -70,10 +83,8 @@ export default function Skills() {
             <h3>🛠️ Tools & Platforms</h3>
             <div className="skill-tags">
               <span>Git</span>
-              <span>GitHub</span>
               <span>VS Code</span>
               <span>Postman</span>
-              <span>npm</span>
             </div>
           </div>
 

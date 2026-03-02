@@ -8,15 +8,15 @@ export default function Home() {
           Hi, I’m <span>Vinay Kumar</span>
         </h1>
 
-        <h2>Full Stack Developer (MERN) & AI/ML 
-enthusiast</h2>
+        <h2>AI/ML & Data Engineering Enthusiast</h2>
 
         <p>
-          I am a Computer Engineering student and Full Stack Developer with
-          hands-on experience in building scalable web applications.
-          I specialize in MERN stack development and have worked on
-          real-world projects including IoT-based systems and
-          Machine Learning powered applications.
+          I am a Computer Engineering student with hands-on experience in
+          <strong> Python, Machine Learning, and Data Analysis</strong>,
+          focused on building intelligent and data-driven solutions.
+          In addition, I have experience with the <strong>MERN stack</strong>,
+          allowing me to develop scalable applications that integrate
+          AI-powered features and real-world data systems.
         </p>
 
         <div className="home-actions">
@@ -31,21 +31,18 @@ enthusiast</h2>
             download
             className="btn secondary"
           >
-           Resume
+            Resume
           </a>
         </div>
       </div>
 
-<div className="home-right">
-  
-  <img
-    src="/vinay.jpeg"
-    alt="Vinay Kumar"
-    className="hero-photo"
-  />
-</div>
-
-      
+      <div className="home-right">
+        <img
+          src="/vinay.jpeg"
+          alt="Vinay Kumar"
+          className="hero-photo"
+        />
+      </div>
     </section>
   );
 }
