@@ -44,6 +44,25 @@ export default function Projects() {
           on news datasets to classify content as real or fake.
         </p>
       </div>
+
+
+
+      {/* Project 4 */}
+      <div className="project-card">
+        <h3>Movie Recommended System</h3>
+        <p className="tech">
+          Streamlit • Python • FastAPI • Machine Learning • MongoDB
+        </p>
+        <p>
+          A full-stack Movie Recommendation System that delivers 
+          personalized movie recommendations using Machine Learning. 
+          The frontend is developed with Streamlit, while the backend is 
+          built using Python and FastAPI. The recommendation engine leverages 
+          TF-IDF-based content filtering and genre-based recommendation techniques,
+           with TMDB API integration for real-time movie information, trending movies,
+            and detailed recommendations.
+        </p>
+      </div>
     </section>
   );
 }
